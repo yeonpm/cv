@@ -18,9 +18,10 @@
 % 폰트 설정 (고딕체)
 % --------------------------------------------------
 % Windows 사용자의 경우 '맑은 고딕'이 가장 무난합니다.
-\setmainfont{Malgun Gothic}
-\setmainhangulfont{Malgun Gothic}
-\setsansfont{Malgun Gothic}
+% macOS 사용자의 경우 'Apple SD Gothic Neo'를 사용합니다.
+\setmainfont{Apple SD Gothic Neo}
+\setmainhangulfont{Apple SD Gothic Neo}
+\setsansfont{Apple SD Gothic Neo}
 
 % --------------------------------------------------
 % 커스텀 명령어 정의
@@ -54,29 +55,28 @@
 % --------------------------------------------------
 \begin{document}
 
-\noindent
 % --------------------------------------------------
 % 헤더 (프로필 정보)
 % --------------------------------------------------
-\begin{tabularx}{\linewidth}{@{} X r @{}}
-    {
-        {\Huge \textbf{김 재 연}} \newline \vspace{5pt}
-        
-        {\large 프론트엔드 개발자 (Frontend Developer)} \newline \vspace{5pt}
+\vspace*{-0.5cm}
+\noindent
+\begin{tabularx}{\linewidth}[t]{@{} X r @{}}
+    \vspace{-\topskip}\vspace{-\baselineskip}\vspace{20pt}
+    {\Huge \textbf{김 재 연}} \newline \vspace{5pt}
+    
+    {\large 프론트엔드 개발자 (Frontend Developer)} \newline \vspace{5pt}
 
-        \clink{
-            \href{https://github.com/yeonpm}{github.com/yeonpm} \textbf{·}
-            \href{mailto:yeonpmdevelop@gmail.com}{yeonpmdevelop@gmail.com} \newline
-        }
+    \clink{
+        \href{https://github.com/yeonpm}{github.com/yeonpm} \textbf{·}
+        \href{mailto:yeonpmdevelop@gmail.com}{yeonpmdevelop@gmail.com} \newline
     }
     & 
     % 프로필 이미지
-    {
-        \includegraphics[width=3.5cm, height=4.5cm]{profile_image.jpg}
-    }
+    \vspace{-\topskip}\vspace{-\baselineskip}\vspace{-0.5cm}
+    \raisebox{-100pt}{\includegraphics[width=3.5cm, height=4.5cm]{profile_image_250.jpg}}
 \end{tabularx}
 
-\vspace{10pt}
+\vspace{60pt}
 
 % --------------------------------------------------
 % Summary
@@ -85,9 +85,10 @@
     \begin{itemize}[leftmargin=*, noitemsep]
         \item 2020년부터 React, React Native, Next.js, TypeScript를 주력으로 사용하는 프론트엔드 개발자입니다.
         \item 2019년도에 앱서비스 창업을 시작으로 개발을 시작하였고, 하나의 제품을 A to Z 개발하며 얻게 된 비즈니스 로직의 관점과 사용자 경험의 중요성, 문제 해결을 우선시 하며 개발합니다.
-        \item 여러 프로젝트들을 할 때마다 반복적인 작업을 개선하기위해 몇 가지 NPM 라이브러리화하여 배포하고, 주식회사 핸들에서 다양한 웹/앱 서비스를 런칭한 경험이 있습니다.
+        \item 여러 프로젝트들을 할 때마다 발생하는 반복적인 작업을 개선하기위해 몇 가지 NPM 라이브러리화하여 배포하고, 주식회사 핸들에서 다양한 웹/앱 서비스를 런칭한 경험이 있습니다.
         \item Python, REST API 활용 능력과 백엔드(Firebase, Node.js)에 대한 이해를 바탕으로 폭 넓은 개발이 가능하며, 문제 해결을 위해서 다각도로 고민합니다.
-        \item 새로운 기술을 항상 팔로우업 하며, 효율적인 코드 작성과 사용자 경험 개선에 집중합니다.
+        \item 새로운 기술을 항상 팔로우업 하며, 문제 해결을 위한 효율적인 코드 작성과 사용자 경험 개선에 집중합니다.
+        \item 다양한 개인 사이드 프로젝트를 진행하며 기술 트렌드를 빠르게 파악하고 적용해봅니다.
     \end{itemize}
 }
 
@@ -111,37 +112,50 @@
     % 1. Work Experience (회사 업무)
     \csubsection{Work Experience}
     \begin{itemize}[leftmargin=*, itemsep=5pt]
-        \item \textbf{주식회사 핸들 (Handle)} \hfill 2020 -- 현재 \\
-        \textit{Frontend Lead / Full-Stack Developer}
+        \item \textbf{주식회사 핸들 (Handle)} \hfill 2021 -- 현재 \\
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
             
-            \item \textbf{GUI 기반 차량 데이터 맵핑 어드민 개발} (React)
+            \item \textbf{GUI 기반 차량 데이터 맵핑 어드민 개발} (React) \hfill 2021 2Q
                 \begin{itemize}[label=$\cdot$, noitemsep]
-                    \item 일 200~300대 등록되는 차량의 트림 맵핑 작업 시간을 대당 2분 $\rightarrow$ \textbf{2초}로 단축 (약 98\% 효율 개선)
+                    \item 일 200\textasciitilde 300대 등록되는 차량의 트림 맵핑 작업 시간을 대당 2분 $\rightarrow$ \textbf{2초}로 단축 (약 98\% 효율 개선)
                     \item 반복 업무 자동화 로직과 직관적인 UI 제공으로 운영팀 업무 효율성 극대화
                 \end{itemize}
 
-            \item \textbf{파트너스 웹(딜러용 매매 관리 시스템) 개발}
+            \item \textbf{파트너스 웹(딜러용 매매 관리 시스템) 개발} (React, Next.js, TypeScript) \hfill 2021 3Q - 2022 1Q
                 \begin{itemize}[label=$\cdot$, noitemsep]
-                    \item 회사의 첫 메인 프로젝트로, 프로젝트 초기 아키텍처 설계부터 테이블 등 핵심 UI 컴포넌트 라이브러리 직접 구현 및 운영
+                    \item 회사의 첫 메인 프로젝트로, 프로젝트 초기 아키텍처 설계부터 테이블 등 핵심 UI 컴포넌트 라이브러리 직접 구현 및 운영, 다양한 화면 개발
                 \end{itemize}
 
-            \item \textbf{차량 이미지 합성 및 표준화 모듈 개발} (Python, Computer Vision)
+            \item \textbf{유저 앱/웹 개발} (React Native, React, Next.js, TypeScript) \hfill 2022 2Q - 2023 1Q
+                \begin{itemize}[label=$\cdot$, noitemsep]
+                    \item 회사의 핵심 커머스 플랫폼으로 4인 프론트엔드 팀으로 개발
+                    \item 모바일앱/웹 사용자 모두를 고려한 웹뷰 기반 앱 개발
+                    \item react-native 및 react 주요 컴포넌트 개발
+                    \item 검색 필터, 검색 리스트 화면, 대출 및 현금 결제 화면, 문의 화면 등 다양한 핵심 화면 개발
+                    \item 운영 배포를 위한 빌드 자동화 스크립트 개발
+                    \item 차량 이미지 렌더링속도 개선 및 최적화
+                \end{itemize}
+
+            \item \textbf{차량 이미지 합성 및 표준화 모듈 개발} (Python, Yolo Computer Vision) \hfill 2023 1Q - 2023 4Q
                 \begin{itemize}[label=$\cdot$, noitemsep]
                     \item 고비용(약 1.7억)의 AI 아웃소싱 결과물 한계를 극복하기 위해 단독으로 이미지 처리 모듈 설계 및 개발
                     \item 배경 제거(Segment), 번호판 인식/마스킹, 그림자 합성 로직 구현으로 플랫폼 이미지 통일성 확보 및 브랜드 신뢰도 제고
+                    \item 기존 평균 2MB의 PNG 이미지를 100KB의 WEBP 포맷으로 최적화하여 이미지 로딩 속도 개선 및 storage 비용 절감
+                    \item 2-3\%의 이미지 합성 오류를 보완할 수 있는 수동 합성 프로그램 개발 (Next.js, TypeScript, Slack API)
                 \end{itemize}
 
-            \item \textbf{중고차 시세 산출 알고리즘 개발} (Python, RANSAC)
+            \item \textbf{중고차 시세 산출 알고리즘 개발} (Python, RANSAC) \hfill 2023 4Q
                 \begin{itemize}[label=$\cdot$, noitemsep]
                     \item 사내 실거래 데이터를 기반으로 RANSAC 알고리즘을 적용, 이상치(Outlier)를 제거한 고정밀 시세 로직 구현
-                    \item 경쟁사 대비 높은 정확도의 시세 정보를 제공하여 매입/판매 의사결정 지원 (백엔드 개발자와 협업)
+                    \item 핵심 로직을 단독으로 맡아서 개발하여 자체 개발한 알고리즘으로 중고차 가격을 high/normal/great/excellent 네 단계로 평가하여 사용자에게 제공
+                    \item 경쟁사 대비 높은 정확도의 시세 정보를 제공하여 사용자에게 매입/판매 의사결정 지원
                 \end{itemize}
             
-            \item \textbf{오토허브셀카 ERP 시스템 구축} (React, TypeScript)
+            \item \textbf{오토허브셀카 ERP 시스템 개발} (React, TypeScript) \hfill 2024 1Q - 2025 4Q
                 \begin{itemize}[label=$\cdot$, noitemsep]
-                    \item 100개 이상의 메뉴와 복잡한 기능을 포함한 대규모 ERP 프론트엔드 단독 개발
-                    \item 백엔드 개발자 8명과의 협업 환경에서 확장성 있는 컴포넌트 구조 설계로 안정적인 서비스 런칭
+                    \item 110개 이상의 메뉴와 복잡한 기능을 포함한 대규모 ERP 프론트엔드 단독 개발
+                    \item 기존에 월 구독료를 내고 사용하던 테이블 컴포넌트 라이브러리를 더욱 고성능화된 컴포넌트로 자체 개발
+                    \item 백엔드 개발자 7명과의 협업 환경에서 확장성 있는 컴포넌트 구조 설계로 안정적인 서비스 런칭
                 \end{itemize}
         \end{itemize}
     \end{itemize}
@@ -151,11 +165,19 @@
     % 2. Personal Projects (개인 프로젝트)
     \csubsection{Personal Projects}
     \begin{itemize}[leftmargin=*, itemsep=5pt]
-        \item \textbf{LLM Fine-tuning & Research} \hfill 2023 \\
-        \textit{한국방사성폐기물학회 우수포스터상 수상}
+        \item \textbf{모바일 앱 기반 서비스 창업 프로젝트 TENTHIRTY} \hfill 2019 3Q - 2021 1Q \\
+        \textit{TENTHIRTY라는 사업자로 할인 결제 앱 서비스 풀스택 개발}
+        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
+            \item React Native, JSP, java, MySQL 기반으로 특허출원, 영업, 유저앱 및 파트너앱 출시 등 2인 프로젝트로 A to Z 진행
+            \item 이 당시 독학으로 개발을 배우고 적용하게 되면서 폭 넓은 앱/웹 개발 경험을 축적했습니다.
+        \end{itemize}
+
+        \item \textbf{LLM Fine-tuning Research} \hfill 2025 1Q - 2025 2Q \\
+        \textit{한국방사성폐기물학회(KRS) 우수포스터상 수상 (Automated MCNP Input Deck Generation using Llama
+        : A Deep Learning Approach) \href{https://www.krs.or.kr/html/?pmode=academic_societies }{Link}}
         \begin{itemize}[label={-}, noitemsep]
-            \item Llama 4 모델을 도메인 특화 데이터로 Fine-tuning하여 전문 지식 질의응답 모델 개발
-            \item NVIDIA H100 GPU 환경에서 Python(PyTorch, Hugging Face)을 활용하여 모델 학습 및 최적화 수행
+            \item Meta의 opensource Large Language Model인 Llama 4 모델을 원자력공학 도메인 특화 데이터로 Fine-tuning하여 설계 코드 생성 모델 개발
+            \item NVIDIA H100 x8 GPU 환경에서 Python(PyTorch, Hugging Face)을 활용하여 모델 학습 및 최적화 수행
             \item 프론트엔드 개발자임에도 최신 AI 기술(LLM)을 빠르게 습득하고 실제 연구 성과로 연결하는 실행력 입증
         \end{itemize}
 
@@ -168,19 +190,12 @@
         \end{itemize}
 
         \item \textbf{Web Services \& Applications} \hfill Personal Projects \\
-        \textit{풀스택 웹 서비스 설계 및 개발}
+        \textit{풀스택 웹 서비스 설계 및 개발 (사이드 프로젝트)}
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item \textbf{Rgbtion} (\href{https://rgbtion.vercel.app}{Link}): 미술 작품 이커머스 플랫폼 개발 (Next.js, Vercel)
-            \item \textbf{Prinprin} (\href{https://prinprin.vercel.app}{Link}): 커스텀 프린팅 티셔츠 제작 서비스
-            \item \textbf{Kholidayz} (\href{https://www.kholidayz.com}{Link}): 한국 공휴일 정보를 제공하는 달력 서비스
-            \item \textbf{Ambiguous Machines} (\href{https://www.ambiguousmachines.com}{Link}): 인터랙티브 웹 플래시 게임 구현
-        \end{itemize}
-
-        \item \textbf{Automated Trading \& Tools} \hfill \\
-        \textit{자동화 프로그램 및 유틸리티 개발}
-        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item \textbf{Renko strikes}: 주식 자동 매매 프로그램 개발 (Python, KIS API 활용)
-            \item \textbf{Tenthirty}: 할인 결제 앱 서비스 개발
+            \item \textbf{Kholidayz} (\href{https://www.kholidayz.com}{Link}): 한국 공휴일 정보를 제공하는 달력 사이트 (사이드 프로젝트) (Next.js, Vercel)
+            \item \textbf{Rgbtion} (\href{https://rgbtion.vercel.app}{Link}): 미술 작품 이커머스 플랫폼 (사이드 프로젝트) (Next.js, Vercel, firebase database storage auth)
+            \item \textbf{Prinprin} (\href{https://prinprin.vercel.app}{Link}): 커스텀 프린팅 티셔츠 제작 서비스 (사이드 프로젝트) (Next.js, Vercel)
+            \item \textbf{Ambiguous Machines} (\href{https://ambiguousmachines.vercel.app}{Link}): 인터랙티브 웹 플래시 게임 구현 (사이드 프로젝트) (Next.js, Vercel, Three.js, firebase database)
         \end{itemize}
     \end{itemize}
 }
