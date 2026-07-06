@@ -14,6 +14,8 @@ xelatex -interaction=nonstopmode cv.tex
 # 중간 파일 정리 (선택사항)
 # rm -f cv.aux cv.log cv.out cv.toc
 
+cp -f cv.pdf "김재연_프론트엔드_이력서.pdf"
+
 echo "빌드가 완료되었습니다. cv.pdf 파일을 확인하세요."
 
 

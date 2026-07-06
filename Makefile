@@ -15,7 +15,7 @@ $(PDFFILE): $(TEXFILE)
 	@echo "빌드를 시작합니다..."
 	$(LATEX) -interaction=nonstopmode $(TEXFILE)
 	$(LATEX) -interaction=nonstopmode $(TEXFILE)
-	@ln -sf $(PDFFILE) $(FRONTEND_PDF)
+	@cp -f $(PDFFILE) $(FRONTEND_PDF)
 	@echo "빌드가 완료되었습니다."
 
 clean:
