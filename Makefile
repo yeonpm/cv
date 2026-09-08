@@ -2,7 +2,7 @@
 
 TEXFILE = cv.tex
 PDFFILE = cv.pdf
-KOREAN_PDF = 김재연_소프트웨어엔지니어_이력서.pdf
+FRONTEND_PDF = 김재연_프론트엔드_이력서.pdf
 LATEX = xelatex
 
 .PHONY: all clean build
@@ -15,7 +15,7 @@ $(PDFFILE): $(TEXFILE)
 	@echo "빌드를 시작합니다..."
 	$(LATEX) -interaction=nonstopmode $(TEXFILE)
 	$(LATEX) -interaction=nonstopmode $(TEXFILE)
-	@cp -f $(PDFFILE) $(KOREAN_PDF)
+	@cp -f $(PDFFILE) $(FRONTEND_PDF)
 	@echo "빌드가 완료되었습니다."
 
 clean:
