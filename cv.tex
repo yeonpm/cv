@@ -205,9 +205,11 @@
         \end{itemize}
 
         \item \textbf{campustival — 대학 축제 탐색 서비스} \hfill 2026 3Q \\
-        \textit{일정·대학·아티스트별 축제와 라인업 탐색 (\href{https://campustival.vercel.app}{Link})}
+        \textit{검색·달력·PWA·SEO 기반 대학 축제 탐색 (Next.js, TypeScript, Supabase, \href{https://campustival.com}{Link})}
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item 일정·대학 초성 검색·아티스트별 공연 탐색 및 축제 상세 구현 (Next.js, TypeScript, MUI, Supabase)
+            \item 검색 UX: 대학 약칭·캠퍼스 별칭·축제명·초성 검색, 아티스트별 공연 탐색, 목록/달력 전환
+            \item PWA: Manifest·Service Worker·홈 화면 설치·플랫폼별 설치 안내·오프라인 안내 페이지 구현
+            \item SEO·성능: 연도/월/지역/계절/주간 SSR 페이지, canonical·OG·sitemap, 서버 조회·캐시 재검증·탭 지연 로딩
             \item 관리자 인증·축제/라인업 CRUD와 자료 수집·분석·등록·검증 흐름, 중복 등록 방지 구현
         \end{itemize}
 
