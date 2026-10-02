@@ -194,32 +194,10 @@
         \end{itemize}
 
         \item \textbf{AI-native Development Workflow} \hfill 2025 -- 현재 \\
-        \textit{Cursor · Claude Code · Codex와 공유 Agent Skills로 개발 생산성 극대화}
+        \textit{분야별 에이전트의 역할과 책임을 명확히 나누고, 병목을 최소화하는 협업 체계 구성}
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item Cursor, Claude Code, Codex를 일상 개발에 결합해 기획·구현·리뷰·배포를 에이전트와 함께 진행
+            \item 기획·디자인·개발·QA 역할을 분리하고, 작업 분담과 인계 기준을 정립해 에이전트 간 협업 흐름 설계
             \item 공통 Agent Skills 카탈로그로 SEO 감사, AdSense 점검, 반복 배포 절차를 도구 간에 재사용
-        \end{itemize}
-
-        \item \textbf{mmuni (뮤니) — 음악 소셜 SNS} \hfill 2026 1Q - 현재 \\
-        \textit{YouTube 음악 공유·피드·플레이리스트 기반 취향 탐색 서비스, 프론트·백엔드 1인 구성 (\href{https://mmuni.vercel.app}{Link})}
-        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item 기획부터 Next.js PWA·Flutter 앱·Supabase DB/Auth·HTTP API까지 프론트·백엔드를 혼자서 설계·개발
-            \item 피드·좋아요·댓글·팔로우·플레이리스트·프로필 API와 RLS를 직접 구성, 모바일 중심 UX·테마 동기화 구현
-        \end{itemize}
-
-        \item \textbf{Camory — 일회용 카메라 앱} \hfill 2026 2Q - 현재 \\
-        \textit{설정 기간 후 자동 삭제되는 사진 관리 Flutter 앱 (Android/iOS, \href{https://camory.vercel.app}{공식 사이트})}
-        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item 앱 전용 저장소 + SQLite 메타데이터 기반 보관·만료 관리, WorkManager 하이브리드 백그라운드 자동 삭제
-            \item 네이티브 카메라 UX(볼륨 셔터, 줌·포커스, 전후면 전환), 간직하기·시스템 갤러리 저장, 6개국어 지원
-            \item 앱 소개·약관·고객지원 공식 사이트 구축, GitHub main 연동 Vercel 자동 배포
-        \end{itemize}
-
-        \item \textbf{n-taxi — 택시비 정산 PWA} \hfill 2026 3Q \\
-        \textit{동승자 택시비를 기록하고 송금·수금 순액으로 정산 (\href{https://n-taxi.vercel.app}{Link})}
-        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item 지불자가 택시비·동승자를 기록하고, 계좌/카카오톡 입금 정보로 송금 경로를 공유 (Next.js, Supabase)
-            \item 정산 탭에서 송금·수금 순액과 기록별 정산 전/정산됨·1인 금액을 확인하고 송금완료로 일괄 처리
         \end{itemize}
 
         \item \textbf{campustival — 대학 축제 탐색 서비스} \hfill 2026 3Q \\
@@ -231,11 +209,33 @@
             \item 관리자 인증·축제/라인업 CRUD와 자료 수집·분석·등록·검증 흐름, 중복 등록 방지 구현
         \end{itemize}
 
+        \item \textbf{Camory — 일회용 카메라 앱} \hfill 2026 2Q - 현재 \\
+        \textit{설정 기간 후 자동 삭제되는 사진 관리 Flutter 앱 (Android/iOS, \href{https://camory.vercel.app}{공식 사이트})}
+        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
+            \item 앱 전용 저장소 + SQLite 메타데이터 기반 보관·만료 관리, WorkManager 하이브리드 백그라운드 자동 삭제
+            \item 네이티브 카메라 UX(볼륨 셔터, 줌·포커스, 전후면 전환), 간직하기·시스템 갤러리 저장, 6개국어 지원
+            \item 앱 소개·약관·고객지원 공식 사이트 구축, GitHub main 연동 Vercel 자동 배포
+        \end{itemize}
+
         \item \textbf{Kholidayz — 한국 공휴일 달력} \hfill 2024 -- 현재 \\
         \textit{연도별 공휴일·대체공휴일·연휴 정보를 제공하는 달력 서비스 (\href{https://www.kholidayz.com}{Link})}
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
             \item Lighthouse로 성능·접근성·Best Practices·SEO를 점검하고 Core Web Vitals·메타 정합성을 개선 (Next.js, Vercel)
             \item 동적 메타·Open Graph, robots/sitemap, FAQ·Article JSON-LD, 공휴일 가이드·설날/추석 연도별 랜딩과 GSC 기반 CTR 개선
+        \end{itemize}
+
+        \item \textbf{mmuni (뮤니) — 음악 소셜 SNS} \hfill 2026 1Q - 현재 \\
+        \textit{YouTube 음악 공유·피드·플레이리스트 기반 취향 탐색 서비스, 프론트·백엔드 1인 구성 (\href{https://mmuni.vercel.app}{Link})}
+        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
+            \item 기획부터 Next.js PWA·Flutter 앱·Supabase DB/Auth·HTTP API까지 프론트·백엔드를 혼자서 설계·개발
+            \item 피드·좋아요·댓글·팔로우·플레이리스트·프로필 API와 RLS를 직접 구성, 모바일 중심 UX·테마 동기화 구현
+        \end{itemize}
+
+        \item \textbf{n-taxi — 택시비 정산 PWA} \hfill 2026 3Q \\
+        \textit{동승자 택시비를 기록하고 송금·수금 순액으로 정산 (\href{https://n-taxi.vercel.app}{Link})}
+        \begin{itemize}[label={-}, noitemsep, topsep=2pt]
+            \item 지불자가 택시비·동승자를 기록하고, 계좌/카카오톡 입금 정보로 송금 경로를 공유 (Next.js, Supabase)
+            \item 정산 탭에서 송금·수금 순액과 기록별 정산 전/정산됨·1인 금액을 확인하고 송금완료로 일괄 처리
         \end{itemize}
 
         \item \textbf{모바일 앱 기반 서비스 창업 프로젝트 TENTHIRTY} \hfill 2019 3Q - 2021 1Q \\
