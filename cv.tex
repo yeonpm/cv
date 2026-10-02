@@ -102,14 +102,17 @@
     \begin{itemize}[leftmargin=*, itemsep=8pt]
         \item \textbf{주식회사 핸들 (Handle)} -- 프론트엔드 개발팀 \hfill 2021.04 -- 현재
         \begin{itemize}[label={-}, noitemsep, topsep=3pt]
-             \item \textbf{오토허브셀카 ERP 시스템 개발} (React, Next.js, TypeScript) \hfill 2024 1Q - 2025 4Q \\
+             \item \textbf{차량 키포인트 기반 이미지 합성 솔루션 개발} \hfill 2026 3Q - 현재 \\
+             \textit{YOLO26 Pose 학습·추론·검증 및 실사에 가까운 스튜디오·그림자 그래픽 구현. 월 2,500만 원 상당의 외주 이미지 솔루션 대체 개발}
+
+             \item \textbf{오토허브셀카 ERP 시스템 개발} (React, Next.js, TypeScript) \hfill 2024 1Q - 2026 2Q \\
              \textit{110개 이상의 메뉴를 포함한 대규모 ERP 프론트엔드 단독 개발 및 고성능 테이블 컴포넌트 자체 구현}
              
              \item \textbf{중고차 시세 산출 알고리즘 개발} (Python, RANSAC) \hfill 2023 4Q \\
              \textit{실거래 데이터 기반 이상치 제거 및 고정밀 시세 산출 로직(RANSAC) 단독 설계 및 구현}
 
              \item \textbf{차량 이미지 합성 및 표준화 모듈 개발} (Python, YOLO, U2-Net) \\
-             \hfill 2023 1Q - 2023 4Q / 2026 3Q \\
+             \hfill 2023 1Q - 2023 4Q \\
              \textit{이미지 전처리 파이프라인(배경 제거, 번호판 마스킹, 그림자 합성) 구축으로 외주 비용 1.7억 절감 및 로딩 속도 최적화}
 
              \item \textbf{카머스 유저 앱/웹 개발} (React Native, React, TypeScript) \hfill 2022 2Q - 2023 1Q \\
@@ -132,7 +135,14 @@
     \csubsection{Key Projects @ Handle}
     \begin{itemize}[leftmargin=*, itemsep=8pt]
     
-        \item \textbf{오토허브셀카 ERP 시스템 개발} \hfill 2024 1Q - 2025 4Q
+        \item \textbf{차량 키포인트 기반 이미지 합성 솔루션 개발} \hfill 2026 3Q - 현재
+        \begin{itemize}[label=$\cdot$, noitemsep]
+            \item NVIDIA DGX Spark에서 YOLO26 Pose를 파인튜닝하여 차량 사진의 키포인트 좌표를 식별하는 모델의 학습·추론·검증 전 과정 구현
+            \item 실사에 가까운 스튜디오 배경과 그림자 그래픽 구현
+            \item 월 2,500만 원 상당의 비용이 드는 외주 이미지 솔루션 대체 개발
+        \end{itemize}
+
+        \item \textbf{오토허브셀카 ERP 시스템 개발} \hfill 2024 1Q - 2026 2Q
         \begin{itemize}[label=$\cdot$, noitemsep]
             \item 110개 이상의 메뉴와 복잡한 기능을 포함한 대규모 ERP 프론트엔드 단독 개발
             \item 유료 테이블 라이브러리를 대체하기 위해 가상화(Virtualization) 기술을 적용한 고성능 데이터 그리드 자체 개발
@@ -148,11 +158,10 @@
             \item 차량 시세 산출에 필요한 데이터 처리를 자동화하고, 사람이 수행하던 시세 등급 결정 프로세스 제거
         \end{itemize}
 
-        \item \textbf{차량 이미지 합성 및 표준화 모듈 개발} \hfill 2023 1Q - 2023 4Q / 2026 3Q
+        \item \textbf{차량 이미지 합성 및 표준화 모듈 개발} \hfill 2023 1Q - 2023 4Q
         \begin{itemize}[label=$\cdot$, noitemsep]
             \item 프론트엔드 사용자 경험(UX) 향상과 이미지 로딩 속도 최적화를 위해 백엔드 이미지 처리 파이프라인을 주도적으로 설계 및 개발 (외주개발비용 약 1.7억 절감)
             \item U2-Net 기반 배경 제거, 번호판 마스킹, 그림자 합성 로직 구현으로 플랫폼 이미지 통일성 확보 및 브랜드 신뢰도 제고
-            \item 2026 3Q: NVIDIA DGX Spark에서 YOLO26 Pose를 파인튜닝하고, 차량 사진의 키포인트 좌표를 추론하는 비전 모델 운용
             \item 기존 평균 2MB의 PNG 이미지를 동일 퀄리티로 100KB 내외의 WEBP 포맷으로 경량화하여 웹 성능(LCP) 개선 및 스토리지 비용 절감
             \item 2-3\%의 이미지 합성 오류를 보완할 수 있는 수동 합성 프로그램 개발 (Next.js, TypeScript, Slack API)
         \end{itemize}
