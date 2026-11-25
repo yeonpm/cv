@@ -198,15 +198,17 @@
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
             \item 기획·디자인·개발·QA 역할을 분리하고, 작업 분담과 인계 기준을 정립해 에이전트 간 협업 흐름 설계
             \item 공통 Agent Skills 카탈로그로 SEO 감사, AdSense 점검, 반복 배포 절차를 도구 간에 재사용
+            \item 작업 티켓·STATUS 문서·Git 연동 배포 SHA 대조·독립 QA 기록 규칙을 여러 개인 서비스에 공통 적용하고, 다중 프로젝트 문서를 한곳에서 여는 로컬 문서 허브(의존성 0 Node 서버) 구축
         \end{itemize}
 
-        \item \textbf{campustival — 대학 축제 탐색 서비스} \hfill 2026 3Q \\
+        \item \textbf{campustival — 대학 축제 탐색 서비스} \hfill 2026 3Q -- 현재 \\
         \textit{검색·달력·PWA·SEO 기반 대학 축제 탐색 (Next.js, TypeScript, Supabase, \href{https://campustival.com}{Link})}
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
             \item 검색 UX: 대학 약칭·캠퍼스 별칭·축제명·초성 검색, 아티스트별 공연 탐색, 목록/달력 전환
             \item PWA: Manifest·Service Worker·홈 화면 설치·플랫폼별 설치 안내·오프라인 안내 페이지 구현
             \item SEO·성능: 연도/월/지역/계절/주간 SSR 페이지, canonical·OG·sitemap, 서버 조회·캐시 재검증·탭 지연 로딩
             \item 관리자 인증·축제/라인업 CRUD와 자료 수집·분석·등록·검증 흐름, 중복 등록 방지 구현
+            \item 데이터 운영: 학교·캠퍼스 75곳의 공식 SNS 출처 85개를 매일 수집·분석하는 반자동 파이프라인, 공식 음원 근거 기반 아티스트 동일성 검토와 주간 데이터 품질 점검 자동화
         \end{itemize}
 
         \item \textbf{Camory — 일회용 카메라 앱} \hfill 2026 2Q - 현재 \\
@@ -215,6 +217,7 @@
             \item 앱 전용 저장소 + SQLite 메타데이터 기반 보관·만료 관리, WorkManager 하이브리드 백그라운드 자동 삭제
             \item 네이티브 카메라 UX(볼륨 셔터, 줌·포커스, 전후면 전환), 간직하기·시스템 갤러리 저장, 6개국어 지원
             \item 앱 소개·약관·고객지원 공식 사이트 구축, GitHub main 연동 Vercel 자동 배포
+            \item 베타 출시 준비: GitHub Actions로 Android AAB·iOS archive 빌드 검증, Galaxy S25·iPhone XS 실기기 QA, 동의 기반 분석과 불필요 권한 제거, 데이터 유실 없는 멱등 DB 마이그레이션(앨범·앨범별 보관 기간)
         \end{itemize}
 
         \item \textbf{Kholidayz — 한국 공휴일 달력} \hfill 2024 -- 현재 \\
@@ -247,7 +250,7 @@
 % --------------------------------------------------
 % Skills
 % --------------------------------------------------
-\newpage
+\vspace{8pt}
 \csection{SKILLS}{
     \begin{itemize}[leftmargin=*, noitemsep]
         \item \textbf{Frontend}: React, React Native, Next.js, Flutter, TypeScript, Zustand, MobX, Redux
