@@ -194,11 +194,13 @@
         \end{itemize}
 
         \item \textbf{AI-native Development Workflow} \hfill 2025 -- 현재 \\
-        \textit{분야별 에이전트의 역할과 책임을 명확히 나누고, 병목을 최소화하는 협업 체계 구성}
+        \textit{AI 에이전트 조직으로 22개 개인 서비스를 1인 운영하는 개발·검증·배포 체계 설계}
         \begin{itemize}[label={-}, noitemsep, topsep=2pt]
-            \item 기획·디자인·개발·QA 역할을 분리하고, 작업 분담과 인계 기준을 정립해 에이전트 간 협업 흐름 설계
-            \item 공통 Agent Skills 카탈로그로 SEO 감사, AdSense 점검, 반복 배포 절차를 도구 간에 재사용
-            \item 작업 티켓·STATUS 문서·Git 연동 배포 SHA 대조·독립 QA 기록 규칙을 여러 개인 서비스에 공통 적용하고, 다중 프로젝트 문서를 한곳에서 여는 로컬 문서 허브(의존성 0 Node 서버) 구축
+            \item 오케스트레이션: 접수→총괄→전문가(기획·디자인·개발·QA 등 21개 역할) 위임 구조와 인계·보고 양식 정립, 작업 위험도에 따라 모델·추론 수준을 골라 병렬 하위 에이전트로 실행
+            \item 품질 게이트: 구현과 검증을 분리해 독립 QA 통과 전 완료 금지, Git 연동 배포만 허용하고 원격 커밋–배포 SHA 대조와 운영 동작 확인까지 마쳐야 배포 완료로 기록
+            \item 자체 Agent Skills 제작: 결정 사항을 선택지·추천안 문서로 모아 고르면 응답 프롬프트가 자동 복사되는 결정 문서(dcfy), 개수 지정 디자인 시안 생성(lookfy), 단독 HTML 보고서 자동 검증(htmlfy) 등
+            \item 노션·지라 대신 로컬 파일 기반 작업 추적 도구(grepa)와 다중 저장소 문서 허브를 만들어, 에이전트가 바로 읽고 고칠 수 있는 단일 기록 지점 구성
+            \item 도구 이관: Codex 대화 1,207건을 검색 가능한 아카이브로 옮기고, 정기 작업을 launchd 기반 자동화로 전환
         \end{itemize}
 
         \item \textbf{campustival — 대학 축제 탐색 서비스} \hfill 2026 3Q -- 현재 \\
